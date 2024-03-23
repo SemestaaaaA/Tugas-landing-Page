@@ -1,0 +1,251 @@
+*{
+   font-family: Helvetica;
+}
+.superior {
+    min-height: 100vh;
+}
+ .bg {
+    background-image: url(/1./img/bgwebs.png);
+    background-position: center;
+    background-size: cover;
+ }   
+body{
+    background-color: rgb(216, 216, 216);
+
+}
+/* NAVBARR */
+nav{
+   
+    background-color: transparent;
+    backdrop-filter: blur(24px);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    border: 0.1px solid rgba(255, 255, 255, 0.07);
+    margin: 0%;
+    z-index: 100;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 29px 1px;
+    
+}
+.nav2 {
+   position: relative;
+   height: 70px;
+   left: 1220px;
+}
+.nav2 li {
+   color: #FFFFFF;
+   font-weight: bold;
+   display: inline-flex;
+   margin-left: 5px;
+   width: 90px;
+   height: 20px;
+   padding-top:0px;
+   list-style: none;
+   text-align: center;
+   text-decoration: none;
+}
+
+.nav2 li a:visited {
+   text-decoration: none;
+   color: inherit;
+}
+nav li a:hover{
+   text-shadow: 0px 0px 8px whitesmoke,
+   0px 0px 12px whitesmoke, 0px 0px 16px whitesmoke;
+}
+
+.nav2 details {
+   color: #FFFFFF;
+   font-family: arial;
+} 
+nav details summary {
+   font-weight: bold;
+   
+}
+
+.nav2 details [open] {
+   padding: 0.5em;
+}
+
+details[open] summary {
+   border-bottom: 1px solid #aaa;
+   margin-bottom: 10px;
+ }
+ .drop {
+    background-color: rgb(225, 225, 225) 5px;
+    border: solid rgba(225, 225, 225, 0.967) 5px;
+    border-radius:12px ;
+    margin: 0px;
+   }
+   details p {
+   
+       background-color: rgb(225, 225, 225) 5px;
+      border: solid rgb(225, 225, 225) 5px;
+      margin: 0px;
+   a{
+      color: white;
+      font-size: 15px;
+      font-family: arial;
+      text-decoration: none;
+      transition: 0,5;
+} 
+a:hover{
+   text-shadow: 0px 0px 8px whitesmoke,
+   0px 0px 12px whitesmoke, 0px 0px 16px whitesmoke;
+   /* background-color: rgba(160, 160, 160, 0.455);
+   box-shadow: 0px 0px 400px 16px #FFFFFF;
+   -webkit-box-shadow: 0px 0px 400px 16px #FFFFFF;
+   -moz-box-shadow:0px 0px 400px 16px #FFFFFF;
+   text-decoration: underline white; */
+}
+
+}
+
+.icon1 {
+   position:fixed;
+    top: 0;
+    left: 0;
+    margin: 4px;
+    height: 36px;
+    padding: 2px 6px;
+}
+.icon1:hover{
+    border-bottom: 2px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    color: rgba(128, 128, 128, 0.241);
+}    
+
+ /* CARD PROFILE */
+ .boxfoto{
+    margin: 90px;
+    border: 1.25px solid rgba(83, 174, 223, 0.247);
+    height: 525px;
+    width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    backdrop-filter: blur(12px);
+    padding: 15px;
+    cursor: pointer;
+ }
+ .boxfoto img {
+   width: 320px;
+   height: 320px;
+   object-fit: cover;
+   pointer-events: none;
+   transition: 0.3s;
+   filter: blur(20px);
+   
+ }
+ .boxfoto .layer1 {
+   background: linear-gradient(to top,rgba(0, 0, 0, 0.428), rgba(0, 0, 0,0));
+   position: absolute;
+   bottom: 0%;
+   width: 100%;
+   height: 75%;
+   opacity: 0;
+   transition: 0.3s;
+ }
+ .boxfoto .info{
+   text-align: justify;
+   position: absolute;
+   bottom: -50%;
+   padding: 15px;
+   opacity: 0;
+   transition: 0.5s bottom,1.75s opacity;
+   color: #FFFFFF;
+ }
+ .info h2 {
+   margin-bottom: 8px;
+   padding-bottom: 0px;
+   text-align: left;
+   font-size: 26px;
+ }
+ .info p {
+   text-align: left;
+   font-size:14px;
+   margin-top: 3px;
+ }
+ .info button {
+   background-color: #490CCC;
+   backdrop-filter:blur(50px);
+   border: none;
+   padding: 8px 12px;
+   font-weight: bold;
+   border-radius: 8px;
+   margin-top: 8px;
+ }
+.boxfoto:hover,
+.boxfoto:hover img,
+.boxfoto:hover .layer1 {
+   transform:  scale(1.1);
+}
+.boxfoto:hover > img{
+   filter: blur(0px);
+   transition: 0.3s;
+}
+.boxfoto:hover > .layer1 {
+   opacity: 1;
+}
+.boxfoto:hover > .info {
+   bottom:0;
+   opacity: 1;
+} 
+/* Paragraf */
+
+.sptyy{
+   text-align: center;
+   padding: 60px;
+   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.455),
+   0px 0px 12px whitesmoke, 0px 0px 16px whitesmoke;
+   color: #FFFFFF;
+   font-family: verdana;
+   font-size: 50px;
+   
+}
+.paragrafabc li{
+   margin-inline: 0px;
+   padding-top:0px;
+   padding: 15px;
+   list-style: none;
+   text-align: center;
+   display: inline;
+   flex-wrap: nowrap;
+   
+}
+
+
+
+.paragrafabc .lirik {
+   text-align: justify;
+   color: #FFFFFF;
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-top: 30px;
+   font-size: large;
+   font-family: monospace;
+   border: 1px solid rgba(255, 255, 255, 0.092);
+   backdrop-filter: blur(10px);
+   border-radius: 25px;
+   margin: 60px;
+}
+.lirik p {
+   padding: 20px;
+   border: 0.1px solid rgba(255, 255, 255, 0.195);
+   border-radius:15px;
+   backdrop-filter: blur(90px);
+}
+
+a {
+   text-decoration: none;
+   color:rgb(255, 255, 255);
+}
+a:hover{
+   text-shadow: 0px 0px 8px whitesmoke,
+   0px 0px 12px whitesmoke, 0px 0px 16px whitesmoke;
+}
